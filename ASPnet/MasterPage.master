@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+
+        <title>Krvodajalstvo</title>
+        <meta charset="UTF-8" />
+        <meta name="title" content="Zavod Republike Slovenije za transfuzijsko medicino" />
+	    <meta name="keywords" content="krvodajalstvo, krvodajalske akcije, kri, Slovenija" />
+        <meta name="keywords" content="blood donations, blood, Slovenia" />
+ 	    <meta name="author" content="Patrik Škrablin, Drejc Pesjak, Matic Krempuš" />
+
+        <link href="Slogi.css" rel="stylesheet" />
+
+        <asp:ContentPlaceHolder id="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <header>
+                <h1>Zavod Republike Slovenije za transfuzijsko medicino</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../Public/Domov.aspx">DOMOV</a></li>
+                        <li><a href="../Public/ONas.aspx">O NAS</a></li>
+                        <li><a href="../Public/KoledarAkcij.aspx">KOLEDAR AKCIJ</a></li>
+                        <li><a href="../Public/Statistika.aspx">STATISTIKA</a></li>
+                        <li><a href="../Prijava.aspx">PRIJAVA</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <div id="levo">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+                    </asp:ContentPlaceHolder>     
+                </div>       
+            </section>
+
+            <aside id="asideLoggedIn" runat="server">                
+                <nav>
+                    <ul>
+                        <li><a href="KrvodajalskeAkcije.aspx">Krvodajalske Akcije</a></li>
+                        <li><a href="Enote.aspx">Enote</a></li>
+                        <li><a href="Krvodajalci.aspx">Krvodajalci</a></li>
+                        <li><a href="OddajaKrvi.aspx">Oddaja Krvi</a></li>
+                        <li><a href="Registracija.aspx">Registracija</a></li>
+                        <li><asp:Button ID="ButtonOdjava" runat="server" Text="Odjava" OnClick="ButtonOdjava_Click" /></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <footer>
+                <h2>Kontakt</h2>
+                <div id="kontakt">
+                    <p>
+                        Šlajmerjeva 6 <br />
+                        1000 Ljubljana
+                    </p>
+                    <p>
+                        T: +386  (01) 5438 100
+                    </p>
+                    <p>
+                        F: + 386 (01) 2302 224
+                    </p>
+                    <p>
+                        central@ztm.si
+                    </p>
+                </div>
+            </footer> 
+        </form>   
+    </body>
+</html>

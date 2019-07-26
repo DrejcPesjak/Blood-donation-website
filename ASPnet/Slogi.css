@@ -1,0 +1,161 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+     font-family: 'Microsoft JhengHei';
+     
+}
+/*----------------------------------------------------------------------*/
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    min-width: 500px;
+    margin-bottom: 100px;
+    margin-top: 4.2%;
+}
+/*---------------------------------------------------------------------*/
+header{
+    
+    position: fixed;
+    top: 0;
+    width: 70%;
+
+	background-color: #da3e3e;
+    padding-right: 18%;
+    padding-left: 12%;
+    min-height: 6%;
+    padding-top: 1.3em;
+    min-width: 740px;  
+}
+
+header h1{
+    font-weight: 400;
+    word-wrap: break-word;
+    width: 13em;
+    font-size: large;    
+    float: left;
+}
+
+header li{
+    display: inline;
+    
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    
+    text-align:center;
+    
+}
+
+header ul{
+   list-style-type: none;
+   min-width: 500px;
+
+}
+
+a{text-decoration: none;}
+a:hover{background-color: gray;}
+a:link, a:visited {color: black;}
+
+header nav{
+    float: right;
+    position: absolute;
+    right: 19%;
+    bottom: 17%;
+}
+/*---------------------------------------------------------*/
+section{
+
+    width: 70%;
+	margin-bottom: 120px;
+	padding-right: 18%;
+    float:right;
+}
+
+/*del znotraj sectiona - poravnan na levo stran section-a*/
+#levo{              
+    float: left;
+    width: 100%;
+} 
+
+/*dinamična tabela - izpisana iz baze*/
+#dinamicna{
+    border-collapse: collapse
+}
+
+#dinamicna td{
+    padding:0.1em 0.5em 0.1em 0.5em;
+    border:1px solid lightgray;
+}
+#dinamicna thead tr td{padding-bottom: 0.3em;}
+#dinamicna thead tr{background-color:lightgrey; font-weight:bold;}
+
+/*div element - trije deli za spreminjanje podatkov v bazi*/
+.vnos input[type=text], .vnos input[type=password]{
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    float:right;
+}
+.vnos{
+    border: 1px solid lightgrey;
+	display: inline-block;
+	padding: 1em;
+	margin: 0.5em;
+	margin-left:0;
+}
+/*---------------------------------------------------------*/
+footer{
+    
+    padding-right: 18%;
+    padding-left: 12%;
+    background-color: #da3e3e;
+
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    
+}
+#kontakt{font-size: small;}
+/*---------------------------------------------------------*/
+aside{
+    padding: 0 1% 0 1%;
+    max-width: 9%;
+    float: left;
+}
+aside ul{list-style-type: none;}
+/*---------------------------------------------------------*/
+h2{
+    font-weight: bold;
+    font-size: larger;
+}
+h3{
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-bottom: 0.3em;
+}
+img{
+    display: block;
+    margin: auto;
+    width: 45%;
+}
+#naslovna{width: 99%;}
